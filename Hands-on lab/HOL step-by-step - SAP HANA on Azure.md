@@ -491,9 +491,13 @@ You will leverage the below artifact to complete this lab:
 
     ```sh
     curl https://raw.githubusercontent.com/polichtm/sap-hana-mcw/main/deploy/hdb_sizes.json --output ~/sap-hana/deploy/hdb_sizes.json  
+    
     curl https://raw.githubusercontent.com/polichtm/sap-hana-mcw/main/deploy/components.json --output ~/sap-hana/deploy/components.json
+    
     curl https://raw.githubusercontent.com/polichtm/sap-hana-mcw/main/deploy/app_sizes.json --output ~/sap-hana/deploy/app_sizes.json
+    
     curl https://raw.githubusercontent.com/polichtm/sap-hana-mcw/main/deploy/anydb_sizes.json --output ~/sap-hana/deploy/anydb_sizes.json
+    
     curl https://raw.githubusercontent.com/polichtm/sap-hana-mcw/main/deploy/input.json --output ~/sap-hana/deploy/input.json
     ```
 
@@ -691,14 +695,6 @@ You will leverage the below artifact to complete this lab:
 
 
 ### Task 4: Install SAP HANA Client on the Windows Server jumpbox Azure VM
-
-> **Note**: It is possible to automate the client installation by adding the following section to the windows jumpbox section of the deployment template:
-
-    ```json
-    "components": [
-          "hana_client_windows"
-        ]
-    ```
 
 1.  Within the Remote Desktop session to Windows Server jumpbox Azure VM **hanav2jmp-vm0**, start **Microsoft Edge**, and browse to [SAP HANA Client 2.0 download page](https://tools.hana.ondemand.com/#hanatools).
 
